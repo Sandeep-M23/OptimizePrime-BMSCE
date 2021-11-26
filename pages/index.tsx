@@ -5,6 +5,9 @@ import {
     Flex,
     Heading,
     Image,
+    Stack,
+    Text,
+    SimpleGrid,
     VStack,
     useBreakpointValue,
 } from '@chakra-ui/react';
