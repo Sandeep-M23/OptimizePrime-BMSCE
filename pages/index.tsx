@@ -1,23 +1,23 @@
 import {
     Box,
-    Heading,
-    Container,
-    Text,
-    Stack,
-    Flex,
     Button,
-    SimpleGrid,
+    Container,
+    Flex,
+    Heading,
     Image,
+    SimpleGrid,
+    Stack,
+    Text,
 } from '@chakra-ui/react';
 import { NextPage } from 'next';
-import Footer from '../components/Footer/Footer';
 import BasicCard from '../components/Card/BasicCard';
 import ServiceCard from '../components/Card/ServiceCard';
 import TestimonialCard from '../components/Card/TestimonialCard';
+import Layout from '../components/UI/Layout';
 
 const Home: NextPage = () => {
     return (
-        <>
+        <Layout title="MHM">
             <Container maxW={'6xl'}>
                 {/*Poster*/}
                 <Stack
@@ -186,8 +186,7 @@ const Home: NextPage = () => {
                     </Stack>
                 </Stack>
             </Container>
-            <Footer />
-        </>
+        </Layout>
     );
 };
 
