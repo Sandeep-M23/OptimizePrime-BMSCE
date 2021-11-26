@@ -1,7 +1,8 @@
 import { Text } from '@chakra-ui/react';
+import { NextPage } from 'next';
 import React from 'react';
 
-const Home = () => {
+const Home: NextPage = () => {
     return (
         <div>
             <Text>Hello World!!</Text>
