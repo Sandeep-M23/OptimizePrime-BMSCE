@@ -47,16 +47,16 @@ const Footer: FunctionComponent = () => {
                         {/*LOGO*/}
                     </Flex>
                 </Box>
-                <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={8}>
+                <SimpleGrid columns={{ base: 2, md: 3 }} spacing={8}>
                     <Stack align={'flex-start'}>
                         <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
                             Services
                         </Text>
-                        <Link href={'#'}>Depression therapy</Link>
-                        <Link href={'#'}>Individual therapy</Link>
-                        <Link href={'#'}>Couples therapy</Link>
-                        <Link href={'#'}>Children therapy</Link>
-                        <Link href={'#'}>Anti-Stress therapy</Link>
+                        <Text>Depression therapy</Text>
+                        <Text>Individual therapy</Text>
+                        <Text>Couples therapy</Text>
+                        <Text>Children therapy</Text>
+                        <Text>Anti-Stress therapy</Text>
                     </Stack>
                     <Stack align={'flex-start'}>
                         <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
@@ -64,14 +64,22 @@ const Footer: FunctionComponent = () => {
                         </Text>
                         <Text fontSize="md" display="flex" alignItems="center">
                             <Icon boxSize={5} m={{ base: 2 }} as={MdPhone} />
-                            <a href="#" target="_blank" rel="noreferrer">
-                                1-800-123-4567
+                            <a
+                                href="tel:+918088611802"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                +91 80 8861 1802
                             </a>
                         </Text>
                         <Text fontSize="md" display="flex" alignItems="center">
                             <Icon boxSize={5} m={{ base: 2 }} as={MdEmail} />
-                            <a href="#" target="_blank" rel="noreferrer">
-                                psycheco@support.com
+                            <a
+                                href="mailto:HmH@gmail.com"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                HmH@gmail.com
                             </a>
                         </Text>
                         <Text
@@ -93,7 +101,11 @@ const Footer: FunctionComponent = () => {
                         </Text>
                         <Text fontSize="md" display="flex" alignItems="center">
                             <Icon boxSize={5} m={{ base: 2 }} as={BsFacebook} />
-                            <a href="#" target="_blank" rel="noreferrer">
+                            <a
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 FaceBook
                             </a>
                         </Text>
@@ -103,19 +115,31 @@ const Footer: FunctionComponent = () => {
                                 m={{ base: 2 }}
                                 as={BsInstagram}
                             />
-                            <a href="#" target="_blank" rel="noreferrer">
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 Instagram
                             </a>
                         </Text>
                         <Text fontSize="md" display="flex" alignItems="center">
                             <Icon boxSize={5} m={{ base: 2 }} as={BsTwitter} />
-                            <a href="m" target="_blank" rel="noreferrer">
+                            <a
+                                href="https://twitter.com/?lang=en"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 Twitter
                             </a>
                         </Text>
                         <Text fontSize="md" display="flex" alignItems="center">
                             <Icon boxSize={5} m={{ base: 2 }} as={BsYoutube} />
-                            <a href="#" target="_blank" rel="noreferrer">
+                            <a
+                                href="https://www.youtube.com/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 Youtube
                             </a>
                         </Text>
