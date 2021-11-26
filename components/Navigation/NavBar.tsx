@@ -13,7 +13,7 @@ import {
 import React, { FunctionComponent } from 'react';
 import NavLink from './NavLink';
 
-const Links = ['Dashboard', 'Projects', 'Team'];
+const Links = ['Home', 'TalkToExperts', 'AboutUs'];
 
 const NavBar: FunctionComponent = () => {
     const { colorMode, toggleColorMode } = useColorMode();
