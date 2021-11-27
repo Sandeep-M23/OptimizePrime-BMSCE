@@ -130,7 +130,7 @@ const TalkToExperts: NextPage = () => {
                         />
                     </Flex>
                 </SimpleGrid>
-                <Box p={4} mt={10}>
+                <Box p={4} mt={16}>
                     <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
                         {featureData2.map((data, index) => (
                             <Feature data={data} key={index} />

@@ -150,7 +150,7 @@ const Home: NextPage = () => {
                     as={Box}
                     textAlign={'center'}
                     spacing={{ base: 6 }}
-                    py={{ base: 20, md: 36 }}
+                    py={{ base: 20, md: 28 }}
                 >
                     <Heading
                         fontWeight={600}
