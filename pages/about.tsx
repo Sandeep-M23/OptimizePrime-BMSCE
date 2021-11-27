@@ -10,7 +10,10 @@ import {
     Image,
     Icon,
 } from '@chakra-ui/react';
-import { FcAssistant } from 'react-icons/fc';
+import { FaBrain } from 'react-icons/fa';
+import { AiFillRead } from 'react-icons/ai';
+import { BsFillPeopleFill } from 'react-icons/bs';
+import { MdHearing } from 'react-icons/md';
 import { NextPage } from 'next';
 
 const About: NextPage = () => {
@@ -18,19 +21,20 @@ const About: NextPage = () => {
         <Container maxW={'6xl'} p="12">
             <Stack
                 as={Box}
-                spacing={{ base: 5 }}
+                rounded={'lg'}
+                spacing={{ base: 2 }}
                 py={{ base: 20, md: 24 }}
-                bg={'red'}
+                bg={'#521262'}
             >
                 <Heading
-                    mb={3}
+                    p={3}
                     fontWeight={600}
                     fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
                     lineHeight={'110%'}
                 >
                     About Us
                 </Heading>
-                <Text>
+                <Text p={3}>
                     Our mission to make quality healthcare affordable and
                     accessible for over a billion+ Indians. We believe in
                     empowering our users with the most accurate, comprehensive,
@@ -56,7 +60,7 @@ const About: NextPage = () => {
                 <Stack spacing={4}>
                     <Text
                         textTransform={'uppercase'}
-                        color={'blue.400'}
+                        color={'#521262'}
                         fontWeight={600}
                         fontSize={'sm'}
                         p={2}
@@ -65,7 +69,9 @@ const About: NextPage = () => {
                     >
                         Our Story
                     </Text>
-                    <Heading>Who we are and what we do</Heading>
+                    <Heading fontSize={'3xl'}>
+                        Who We Are And What We Do
+                    </Heading>
                     <Text color={'gray.500'} fontSize={'lg'}>
                         Donec et odio pellentesque diam volutpat. Quis vel eros
                         donec ac odio. Adipiscing elit duis tristique
@@ -86,7 +92,7 @@ const About: NextPage = () => {
                 <Heading textAlign={'center'} mb={4}>
                     Credentials
                 </Heading>
-                <SimpleGrid columns={{ base: 1, md: 4 }} spacing={10}>
+                <SimpleGrid columns={{ base: 1, md: 4 }} spacing={10} py={5}>
                     <Stack alignItems={'center'} my={4}>
                         <Flex
                             w={16}
@@ -95,10 +101,10 @@ const About: NextPage = () => {
                             justify={'center'}
                             color={'white'}
                             rounded={'full'}
-                            bg={'gray.100'}
+                            bg={'#521262'}
                             mb={1}
                         >
-                            <Icon as={FcAssistant} w={10} h={10} />
+                            <Icon as={AiFillRead} w={10} h={10} />
                         </Flex>
                         <Text fontWeight={600}>Higher degrees</Text>
                         <Text color={'gray.600'} textAlign={'center'}>
@@ -114,10 +120,10 @@ const About: NextPage = () => {
                             justify={'center'}
                             color={'white'}
                             rounded={'full'}
-                            bg={'gray.100'}
+                            bg={'#521262'}
                             mb={1}
                         >
-                            <Icon as={FcAssistant} w={10} h={10} />
+                            <Icon as={FaBrain} w={10} h={10} />
                         </Flex>
                         <Text fontWeight={600}>Methodology</Text>
                         <Text color={'gray.600'} textAlign={'center'}>
@@ -133,10 +139,10 @@ const About: NextPage = () => {
                             justify={'center'}
                             color={'white'}
                             rounded={'full'}
-                            bg={'gray.100'}
+                            bg={'#521262'}
                             mb={1}
                         >
-                            <Icon as={FcAssistant} w={10} h={10} />
+                            <Icon as={BsFillPeopleFill} w={10} h={10} />
                         </Flex>
                         <Text fontWeight={600}>Professionals</Text>
                         <Text color={'gray.600'} textAlign={'center'}>
@@ -152,10 +158,10 @@ const About: NextPage = () => {
                             justify={'center'}
                             color={'white'}
                             rounded={'full'}
-                            bg={'gray.100'}
+                            bg={'#521262'}
                             mb={1}
                         >
-                            <Icon as={FcAssistant} w={10} h={10} />
+                            <Icon as={MdHearing} w={10} h={10} />
                         </Flex>
                         <Text fontWeight={600}>Therapy</Text>
                         <Text color={'gray.600'} textAlign={'center'}>
