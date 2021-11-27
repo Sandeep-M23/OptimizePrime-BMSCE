@@ -19,11 +19,12 @@ import {
 } from '@chakra-ui/react';
 import { NextPage } from 'next';
 import { FaCheckCircle } from 'react-icons/fa';
-import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
+import { MdEmojiPeople, MdChildCare, MdFamilyRestroom } from 'react-icons/md';
 import { IoSearchSharp } from 'react-icons/io5';
 import PriceCard from '../components/Card/PriceCard';
 import Feature from '../components/UI/Feature';
 import Layout from '../components/UI/Layout';
+
 const TalkToExperts: NextPage = () => {
     return (
         <Layout title="MHM | Talk to Experts">
@@ -32,10 +33,10 @@ const TalkToExperts: NextPage = () => {
                     <Stack spacing={4}>
                         <Text
                             textTransform={'uppercase'}
-                            color={'blue.400'}
                             fontWeight={600}
                             fontSize={'sm'}
-                            bg={useColorModeValue('blue.50', 'blue.900')}
+                            bg={'#521262'}
+                            color={'white'}
                             p={2}
                             alignSelf={'flex-start'}
                             rounded={'md'}
@@ -63,6 +64,7 @@ const TalkToExperts: NextPage = () => {
                             longer a safe, loving, and enjoyable space.
                         </Text>
                         <Stack
+                            p={2}
                             spacing={4}
                             divider={
                                 <StackDivider
@@ -76,46 +78,37 @@ const TalkToExperts: NextPage = () => {
                             <Feature
                                 icon={
                                     <Icon
-                                        as={FcAssistant}
-                                        color={'yellow.500'}
-                                        w={5}
-                                        h={5}
-                                    />
-                                }
-                                iconBg={useColorModeValue(
-                                    'yellow.100',
-                                    'yellow.900'
-                                )}
-                                text={'Individual Therapy'}
-                            />
-                            <Feature
-                                icon={
-                                    <Icon
-                                        as={FcInTransit}
-                                        color={'green.500'}
-                                        w={5}
-                                        h={5}
-                                    />
-                                }
-                                iconBg={useColorModeValue(
-                                    'green.100',
-                                    'green.900'
-                                )}
-                                text={'Family Therapy'}
-                            />
-                            <Feature
-                                icon={
-                                    <Icon
-                                        as={FcDonate}
+                                        as={MdEmojiPeople}
                                         color={'purple.500'}
                                         w={5}
                                         h={5}
                                     />
                                 }
-                                iconBg={useColorModeValue(
-                                    'purple.100',
-                                    'purple.900'
-                                )}
+                                iconBg={'white'}
+                                text={'Individual Therapy'}
+                            />
+                            <Feature
+                                icon={
+                                    <Icon
+                                        as={MdFamilyRestroom}
+                                        color={'purple.500'}
+                                        w={5}
+                                        h={5}
+                                    />
+                                }
+                                iconBg={'white'}
+                                text={'Family Therapy'}
+                            />
+                            <Feature
+                                icon={
+                                    <Icon
+                                        as={MdChildCare}
+                                        color={'purple.500'}
+                                        w={5}
+                                        h={5}
+                                    />
+                                }
+                                iconBg={'white'}
                                 text={'Coaching'}
                             />
                         </Stack>
@@ -229,21 +222,21 @@ const TalkToExperts: NextPage = () => {
                                     <ListItem>
                                         <ListIcon
                                             as={FaCheckCircle}
-                                            color="green.500"
+                                            color="purple.500"
                                         />
                                         unlimited build minutes
                                     </ListItem>
                                     <ListItem>
                                         <ListIcon
                                             as={FaCheckCircle}
-                                            color="green.500"
+                                            color="purple.500"
                                         />
                                         Lorem, ipsum dolor.
                                     </ListItem>
                                     <ListItem>
                                         <ListIcon
                                             as={FaCheckCircle}
-                                            color="green.500"
+                                            color="purple.500"
                                         />
                                         5TB Lorem, ipsum dolor.
                                     </ListItem>
@@ -251,7 +244,7 @@ const TalkToExperts: NextPage = () => {
                                 <Box w="80%" pt={7}>
                                     <Button
                                         w="full"
-                                        colorScheme="red"
+                                        colorScheme="purple"
                                         variant="outline"
                                     >
                                         Start trial
@@ -270,16 +263,10 @@ const TalkToExperts: NextPage = () => {
                                 >
                                     <Text
                                         textTransform="uppercase"
-                                        bg={useColorModeValue(
-                                            'red.300',
-                                            'red.700'
-                                        )}
+                                        bg={'#521262'}
                                         px={3}
                                         py={1}
-                                        color={useColorModeValue(
-                                            'gray.900',
-                                            'gray.300'
-                                        )}
+                                        color={'white'}
                                         fontSize="sm"
                                         fontWeight="600"
                                         rounded="xl"
@@ -315,41 +302,41 @@ const TalkToExperts: NextPage = () => {
                                         <ListItem>
                                             <ListIcon
                                                 as={FaCheckCircle}
-                                                color="green.500"
+                                                color="purple.500"
                                             />
                                             unlimited build minutes
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon
                                                 as={FaCheckCircle}
-                                                color="green.500"
+                                                color="purple.500"
                                             />
                                             Lorem, ipsum dolor.
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon
                                                 as={FaCheckCircle}
-                                                color="green.500"
+                                                color="purple.500"
                                             />
                                             5TB Lorem, ipsum dolor.
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon
                                                 as={FaCheckCircle}
-                                                color="green.500"
+                                                color="purple.500"
                                             />
                                             5TB Lorem, ipsum dolor.
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon
                                                 as={FaCheckCircle}
-                                                color="green.500"
+                                                color="purple.500"
                                             />
                                             5TB Lorem, ipsum dolor.
                                         </ListItem>
                                     </List>
                                     <Box w="80%" pt={7}>
-                                        <Button w="full" colorScheme="red">
+                                        <Button w="full" colorScheme="purple">
                                             Start trial
                                         </Button>
                                     </Box>
@@ -382,21 +369,21 @@ const TalkToExperts: NextPage = () => {
                                     <ListItem>
                                         <ListIcon
                                             as={FaCheckCircle}
-                                            color="green.500"
+                                            color="purple.500"
                                         />
                                         unlimited build minutes
                                     </ListItem>
                                     <ListItem>
                                         <ListIcon
                                             as={FaCheckCircle}
-                                            color="green.500"
+                                            color="purple.500"
                                         />
                                         Lorem, ipsum dolor.
                                     </ListItem>
                                     <ListItem>
                                         <ListIcon
                                             as={FaCheckCircle}
-                                            color="green.500"
+                                            color="purple.500"
                                         />
                                         5TB Lorem, ipsum dolor.
                                     </ListItem>
@@ -404,7 +391,7 @@ const TalkToExperts: NextPage = () => {
                                 <Box w="80%" pt={7}>
                                     <Button
                                         w="full"
-                                        colorScheme="red"
+                                        colorScheme="purple"
                                         variant="outline"
                                     >
                                         Start trial
