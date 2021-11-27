@@ -45,11 +45,13 @@ const Blogs: NextPage = () => {
             <Container maxW={'7xl'} p="12">
                 <Stack
                     as={Box}
-                    spacing={{ base: 5 }}
+                    rounded={'lg'}
+                    spacing={{ base: 2 }}
                     py={{ base: 20, md: 24 }}
-                    bg={'red'}
+                    bg={'#521262'}
                 >
                     <Heading
+                        p={3}
                         mb={3}
                         fontWeight={600}
                         fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
@@ -57,7 +59,7 @@ const Blogs: NextPage = () => {
                     >
                         Blogs
                     </Heading>
-                    <Text>
+                    <Text p={3}>
                         Across the world, people use blogs as a platform to
                         share experiences, increase awareness and understanding,
                         and provide comfort and support. And that’s a very good
@@ -67,7 +69,9 @@ const Blogs: NextPage = () => {
                     </Text>
                 </Stack>
                 {data.map((blog, index) => (
-                    <BlogCard blog={blog} key={index} />
+                    <Stack key={index} p={5} my={2}>
+                        <BlogCard blog={blog} />
+                    </Stack>
                 ))}
             </Container>
         </Layout>
