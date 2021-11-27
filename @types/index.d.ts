@@ -19,3 +19,11 @@ interface IBasicCard {
     description: string;
     icon: IconType;
 }
+
+interface ITestimonial {
+    heading: string;
+    review: string;
+    name: string;
+    designation: string;
+    imageUrl: string;
+}
