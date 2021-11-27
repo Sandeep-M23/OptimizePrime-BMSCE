@@ -12,10 +12,61 @@ import {
     VStack,
 } from '@chakra-ui/react';
 import { NextPage } from 'next';
+import { AiFillHeart } from 'react-icons/ai';
+import { FaPeopleCarry, FaRunning } from 'react-icons/fa';
+import { IBasicCard, ITestimonial } from '../@types';
 import BasicCard from '../components/Card/BasicCard';
 import ServiceCard from '../components/Card/ServiceCard';
 import TestimonialCard from '../components/Card/TestimonialCard';
 import Layout from '../components/UI/Layout';
+
+const basicCardData: IBasicCard[] = [
+    {
+        title: 'Affects Physical Health',
+        description:
+            'The mind and the body are connected. Many mental ailments cause stress, which lowers the immune system. This means more frequent sickness and inability to cope.Stress and anxiety can take a toll on our physical health.',
+        icon: FaRunning,
+    },
+    {
+        title: 'Affects Everything',
+        description:
+            'Our mental health affects how we cope with life. Lack of treatment leads to hopelessness and sadness, worthlessness, feeling guilty, anxiety and worry, fear, and loss of control.Our relationships may suffer.',
+        icon: AiFillHeart,
+    },
+    {
+        title: 'End Stigma and Shame',
+        description:
+            'When it comes down to it, those who are mentally ill must need treatment. But without awareness and breaking the stigma surrounding their condition, they won’t feel comfortable reaching out to somebody for help.',
+        icon: FaPeopleCarry,
+    },
+];
+
+const testimonialCardData: ITestimonial[] = [
+    {
+        heading: 'Efficient Collaborating',
+        review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Auctor neque sed imperdiet nibh lectus feugiat nunc sem.',
+        name: 'Guy Hawkins',
+        designation: 'Designer',
+        imageUrl:
+            'http://webdesign-finder.com/psycheco-psychology/wp-content/uploads/2021/06/img50.jpg',
+    },
+    {
+        heading: 'Efficient Collaborating',
+        review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.',
+        name: 'Alec Buttons',
+        designation: 'Software Engineer',
+        imageUrl:
+            'https://matar-elementor.42theme.com/wp-content/uploads/2020/05/close-up-cheerful-older-man-standing-isolated-on-w-Z7MW6Q8.jpg',
+    },
+    {
+        heading: 'Efficient Collaborating',
+        review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.',
+        name: 'Kira Rhoades',
+        designation: 'CEO',
+        imageUrl:
+            'https://matar-elementor.42theme.com/wp-content/uploads/2020/05/beautiful-young-woman-standing-outdoors-PDP7Q6B-1.jpg',
+    },
+];
 
 const Home: NextPage = () => {
     return (
@@ -114,9 +165,9 @@ const Home: NextPage = () => {
                         columns={{ base: 1, md: 3 }}
                         spacing={{ base: 5, lg: 8 }}
                     >
-                        <BasicCard />
-                        <BasicCard />
-                        <BasicCard />
+                        {basicCardData.map((data, index) => (
+                            <BasicCard data={data} key={index} />
+                        ))}
                     </SimpleGrid>
                 </Box>
                 {/*Service*/}
@@ -236,9 +287,9 @@ const Home: NextPage = () => {
                         spacing={{ base: 10, md: 4, lg: 10 }}
                         my={10}
                     >
-                        <TestimonialCard />
-                        <TestimonialCard />
-                        <TestimonialCard />
+                        {testimonialCardData.map((data, index) => (
+                            <TestimonialCard data={data} key={index} />
+                        ))}
                     </Stack>
                 </Stack>
             </Container>

@@ -9,6 +9,7 @@ import {
 } from '@chakra-ui/react';
 import { NextPage } from 'next';
 import React from 'react';
+import { IBlog } from '../../@types';
 
 type Props = {
     blog: IBlog;
