@@ -18,7 +18,7 @@ import { NextPage } from 'next';
 
 const About: NextPage = () => {
     return (
-        <Container maxW={'6xl'} p="12">
+        <Container maxW={'7xl'} p="12">
             <Stack
                 as={Box}
                 rounded={'lg'}
