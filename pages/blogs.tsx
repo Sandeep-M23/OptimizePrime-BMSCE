@@ -1,6 +1,7 @@
 import { Box, Container, Heading, Stack, Text } from '@chakra-ui/react';
 import { NextPage } from 'next';
 import React from 'react';
+import { IBlog } from '../@types';
 import BlogCard from '../components/Card/BlogCard';
 import Layout from '../components/UI/Layout';
 
@@ -56,10 +57,11 @@ const Blogs: NextPage = () => {
                         fontWeight={600}
                         fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
                         lineHeight={'110%'}
+                        color="white"
                     >
                         Blogs
                     </Heading>
-                    <Text p={3}>
+                    <Text p={3} color="white">
                         Across the world, people use blogs as a platform to
                         share experiences, increase awareness and understanding,
                         and provide comfort and support. And that’s a very good

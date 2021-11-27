@@ -33,10 +33,11 @@ const About: NextPage = () => {
                         fontWeight={600}
                         fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
                         lineHeight={'110%'}
+                        color="white"
                     >
                         About Us
                     </Heading>
-                    <Text p={3}>
+                    <Text p={3} color="white">
                         Our mission to make quality healthcare affordable and
                         accessible for over a billion+ Indians. We believe in
                         empowering our users with the most accurate,
