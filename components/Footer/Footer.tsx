@@ -62,25 +62,45 @@ const Footer: FunctionComponent = () => {
                         <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
                             Contact Us
                         </Text>
-                        <Text fontSize="md" display="flex" alignItems="center">
+                        <Text
+                            fontSize="md"
+                            display="flex"
+                            alignItems="center"
+                            _hover={{
+                                color: '#521262',
+                            }}
+                        >
                             <Icon boxSize={5} m={{ base: 2 }} as={MdPhone} />
-                            <a
+                            <Link
                                 href="tel:+918088611802"
                                 target="_blank"
                                 rel="noreferrer"
+                                _hover={{
+                                    textDecoration: 'none',
+                                }}
                             >
                                 +91 80 8861 1802
-                            </a>
+                            </Link>
                         </Text>
-                        <Text fontSize="md" display="flex" alignItems="center">
+                        <Text
+                            fontSize="md"
+                            display="flex"
+                            alignItems="center"
+                            _hover={{
+                                color: '#521262',
+                            }}
+                        >
                             <Icon boxSize={5} m={{ base: 2 }} as={MdEmail} />
-                            <a
+                            <Link
                                 href="mailto:HmH@gmail.com"
                                 target="_blank"
                                 rel="noreferrer"
+                                _hover={{
+                                    textDecoration: 'none',
+                                }}
                             >
                                 HmH@gmail.com
-                            </a>
+                            </Link>
                         </Text>
                         <Text
                             fontSize="md"
@@ -99,49 +119,90 @@ const Footer: FunctionComponent = () => {
                         <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
                             Follow Us
                         </Text>
-                        <Text fontSize="md" display="flex" alignItems="center">
+                        <Text
+                            fontSize="md"
+                            display="flex"
+                            alignItems="center"
+                            _hover={{
+                                color: '#521262',
+                                textDecoration: 'none',
+                            }}
+                        >
                             <Icon boxSize={5} m={{ base: 2 }} as={BsFacebook} />
-                            <a
+                            <Link
                                 href="https://www.facebook.com/"
                                 target="_blank"
                                 rel="noreferrer"
+                                _hover={{
+                                    textDecoration: 'none',
+                                }}
                             >
                                 FaceBook
-                            </a>
+                            </Link>
                         </Text>
-                        <Text fontSize="md" display="flex" alignItems="center">
+                        <Text
+                            fontSize="md"
+                            display="flex"
+                            alignItems="center"
+                            _hover={{
+                                color: '#521262',
+                            }}
+                        >
                             <Icon
                                 boxSize={5}
                                 m={{ base: 2 }}
                                 as={BsInstagram}
                             />
-                            <a
+                            <Link
                                 href="https://www.instagram.com/"
                                 target="_blank"
                                 rel="noreferrer"
+                                _hover={{
+                                    textDecoration: 'none',
+                                }}
                             >
                                 Instagram
-                            </a>
+                            </Link>
                         </Text>
-                        <Text fontSize="md" display="flex" alignItems="center">
+                        <Text
+                            fontSize="md"
+                            display="flex"
+                            alignItems="center"
+                            _hover={{
+                                color: '#521262',
+                            }}
+                        >
                             <Icon boxSize={5} m={{ base: 2 }} as={BsTwitter} />
-                            <a
+                            <Link
                                 href="https://twitter.com/?lang=en"
                                 target="_blank"
                                 rel="noreferrer"
+                                _hover={{
+                                    textDecoration: 'none',
+                                }}
                             >
                                 Twitter
-                            </a>
+                            </Link>
                         </Text>
-                        <Text fontSize="md" display="flex" alignItems="center">
+                        <Text
+                            fontSize="md"
+                            display="flex"
+                            alignItems="center"
+                            _hover={{
+                                color: '#521262',
+                            }}
+                        >
                             <Icon boxSize={5} m={{ base: 2 }} as={BsYoutube} />
-                            <a
+                            <Link
                                 href="https://www.youtube.com/"
                                 target="_blank"
                                 rel="noreferrer"
+                                _hover={{
+                                    textDecoration: 'none',
+                                }}
                             >
                                 Youtube
-                            </a>
+                            </Link>
                         </Text>
                     </Stack>
                 </SimpleGrid>
