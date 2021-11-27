@@ -12,7 +12,8 @@ const NavLink: FunctionComponent = ({
         rounded={'md'}
         _hover={{
             textDecoration: 'none',
-            bg: useColorModeValue('gray.200', 'gray.700'),
+            bg: useColorModeValue('purple.700', 'white'),
+            color: useColorModeValue('white', 'purple.700'),
         }}
         href={children.toString().toLowerCase()}
     >

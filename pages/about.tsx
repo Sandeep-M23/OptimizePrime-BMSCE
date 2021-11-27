@@ -29,11 +29,11 @@ const About: NextPage = () => {
                     bg={'#521262'}
                 >
                     <Heading
+                        color="white"
                         p={3}
                         fontWeight={600}
                         fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
                         lineHeight={'110%'}
-                        color="white"
                     >
                         About Us
                     </Heading>
@@ -45,6 +45,7 @@ const About: NextPage = () => {
                         enabling them to make better healthcare decisions
                     </Text>
                 </Stack>
+
                 <SimpleGrid
                     columns={{ base: 1, md: 2 }}
                     spacing={10}

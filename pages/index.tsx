@@ -44,23 +44,23 @@ const basicCardData: IBasicCard[] = [
 const testimonialCardData: ITestimonial[] = [
     {
         heading: 'Efficient Collaborating',
-        review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Auctor neque sed imperdiet nibh lectus feugiat nunc sem.',
+        review: 'The people providing the service and technology used is very good and have good collaboration.',
         name: 'Guy Hawkins',
         designation: 'Designer',
         imageUrl:
             'http://webdesign-finder.com/psycheco-psychology/wp-content/uploads/2021/06/img50.jpg',
     },
     {
-        heading: 'Efficient Collaborating',
-        review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.',
+        heading: 'Good Service',
+        review: 'The service provided by the doctors is very good and they have very good knowledge.',
         name: 'Alec Buttons',
         designation: 'Software Engineer',
         imageUrl:
             'https://matar-elementor.42theme.com/wp-content/uploads/2020/05/close-up-cheerful-older-man-standing-isolated-on-w-Z7MW6Q8.jpg',
     },
     {
-        heading: 'Efficient Collaborating',
-        review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.',
+        heading: 'Friendly Nature',
+        review: 'The Doctors are very friendly and understand the problem very quickly.',
         name: 'Kira Rhoades',
         designation: 'CEO',
         imageUrl:
@@ -79,14 +79,14 @@ const serviceData: IService[] = [
     {
         title: 'Couples Therapy',
         description:
-            'Couples therapy can address a wide range of relationship issues, including recurring conflicts, feelings of disconnection, an affair or difficulties due to external stressors.',
+            'Couples therapy can address a wide range of relationship issues, including recurring conflicts, feelings of disconnection, an affair, stress and no harmony, understanding or difficulties due to external stressors.',
         imageUrl:
             'https://matar-elementor.42theme.com/wp-content/uploads/2020/05/happy-couple-at-successful-therapy-session-with-fa-W9KXY7U-scaled.jpg',
     },
     {
         title: 'Children Therapy',
         description:
-            'Child counseling is a type of therapy that focuses on young children, teens, and adolescents with one or more mental illnesses. It also provides aid to youths, who have experienced trauma, and/or who are experiencing a dysfunctional or stressful home environment.',
+            'Child counseling is a type of therapy that focuses on young children and adolescents with one or more mental illnesses. It also provides aid to youths, who have experienced trauma, who are experiencing a dysfunctional or stressful home environment.',
         imageUrl:
             'https://matar-elementor.42theme.com/wp-content/uploads/2020/05/sad-boy-with-teddy-bear-JVSTZXX-scaled.jpg',
     },
@@ -95,13 +95,13 @@ const serviceData: IService[] = [
 const Home: NextPage = () => {
     return (
         <Layout title="MHM">
-            <Container maxW={'6xl'}>
+            <Container maxW={'7xl'}>
                 {/*Poster*/}
                 <Flex
                     w={'full'}
-                    h={'75vh'}
+                    h={'80vh'}
                     backgroundImage={
-                        'url(https://static.scientificamerican.com/sciam/cache/file/54808BE2-DCC8-4438-860BFF8211C17CE2_source.jpg)'
+                        'url(https://www.minnpost.com/wp-content/uploads/2020/01/WomanSilhouette640.jpg?strip=all)'
                     }
                     backgroundSize={'cover'}
                     backgroundPosition={'center center'}
@@ -112,11 +112,15 @@ const Home: NextPage = () => {
                         px={useBreakpointValue({ base: 4, md: 8 })}
                         bgGradient={'linear(to-r, blackAlpha.600, transparent)'}
                     >
-                        <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
+                        <Stack maxW={'2xl'} align={'center'} spacing={3}>
+                            <Text color={'purple.400'}>
+                                MENTAL HEALTH MATTERS
+                            </Text>
                             <Text
-                                color={'white'}
-                                fontWeight={700}
+                                color={'gray.200'}
+                                fontWeight={400}
                                 lineHeight={1.2}
+                                textAlign={'center'}
                                 fontSize={useBreakpointValue({
                                     base: '2xl',
                                     md: '4xl',
@@ -124,7 +128,19 @@ const Home: NextPage = () => {
                             >
                                 Covid 19 has intensified and exaggerated fault
                                 lines in contemporary socities revealing back to
-                                us our ways of dealing with Mental Health
+                                us our ways of dealing with
+                            </Text>
+                            <Text
+                                color={'purple.400'}
+                                fontWeight={400}
+                                lineHeight={1.2}
+                                textAlign={'center'}
+                                fontSize={useBreakpointValue({
+                                    base: '2xl',
+                                    md: '4xl',
+                                })}
+                            >
+                                Mental Health
                             </Text>
                         </Stack>
                     </VStack>
@@ -134,7 +150,7 @@ const Home: NextPage = () => {
                     as={Box}
                     textAlign={'center'}
                     spacing={{ base: 6 }}
-                    py={{ base: 20, md: 36 }}
+                    py={{ base: 20, md: 28 }}
                 >
                     <Heading
                         fontWeight={600}
@@ -209,8 +225,9 @@ const Home: NextPage = () => {
                         What we can Offer
                     </Heading>
                     <Text color={'gray.500'}>
-                        Maecenas nec mi in est maximus fermentum. Suspendisse
-                        tempus, nibh id convallis porttitor, ipsum.
+                        We Are Trained and Professional Councellsor,who
+                        understand the issuse faced by our clients and discuss
+                        various/topics to resolve problem.
                     </Text>
                     <SimpleGrid
                         columns={{ base: 1, md: 3 }}
@@ -244,7 +261,7 @@ const Home: NextPage = () => {
                                     position: 'absolute',
                                     bottom: 1,
                                     left: 0,
-                                    bg: 'red.400',
+                                    bg: 'purple.700',
                                     zIndex: -1,
                                 }}
                             >
@@ -264,9 +281,10 @@ const Home: NextPage = () => {
                             size={'lg'}
                             fontWeight={'normal'}
                             px={6}
-                            colorScheme={'red'}
-                            bg={'red.400'}
-                            _hover={{ bg: 'red.500' }}
+                            colorScheme={'purple'}
+                            color={'white'}
+                            bg={'purple.700'}
+                            _hover={{ bg: 'purple.800' }}
                         >
                             Schedule a session
                         </Button>
@@ -302,7 +320,7 @@ const Home: NextPage = () => {
                 {/*Testimonial */}
                 <Stack spacing={6} align={'center'} py={{ base: 20 }}>
                     <Heading>What Our Clients Say</Heading>
-                    <Text>
+                    <Text color={'gray.500'}>
                         We have been working with clients around the world and
                         Here are the few things they say about us.
                     </Text>
