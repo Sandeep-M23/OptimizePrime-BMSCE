@@ -13,3 +13,9 @@ interface ISocialMedia {
     url: string;
     text: string;
 }
+
+interface IBasicCard {
+    title: string;
+    description: string;
+    icon: IconType;
+}
