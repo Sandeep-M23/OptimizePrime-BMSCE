@@ -1,12 +1,10 @@
 import { CloseIcon, HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import {
-    AspectRatio,
     Box,
     Button,
     Flex,
     HStack,
     IconButton,
-    Image,
     Stack,
     useColorMode,
     useColorModeValue,
@@ -14,6 +12,7 @@ import {
 } from '@chakra-ui/react';
 import React, { FunctionComponent } from 'react';
 import NavLink from './NavLink';
+import Logo from '../Logo/Logo';
 
 const Links = ['TalkToExperts', 'Blogs', 'About'];
 
@@ -41,28 +40,20 @@ const NavBar: FunctionComponent = () => {
                             onClick={isOpen ? onClose : onOpen}
                         />
                         <HStack spacing={8} alignItems={'center'}>
-                            <Box>
-                                <AspectRatio maxW="400px" ratio={4 / 3}>
-                                    <Image
-                                        src="/assets/images/logo.png"
-                                        alt="logo"
-                                        objectFit="cover"
-                                    />
-                                </AspectRatio>
-                            </Box>
-                        </HStack>
-                        <HStack spacing={8} alignItems={'center'}>
-                            <HStack
-                                as={'nav'}
-                                spacing={4}
-                                display={{ base: 'none', md: 'flex' }}
-                            >
-                                {Links.map((link) => (
-                                    <NavLink key={link}>{link}</NavLink>
-                                ))}
-                            </HStack>
+                            <Logo />
                         </HStack>
                     </Flex>
+                    <HStack spacing={8} alignItems={'center'}>
+                        <HStack
+                            as={'nav'}
+                            spacing={4}
+                            display={{ base: 'none', md: 'flex' }}
+                        >
+                            {Links.map((link) => (
+                                <NavLink key={link}>{link}</NavLink>
+                            ))}
+                        </HStack>
+                    </HStack>
 
                     <Flex alignItems={'center'}>
                         <Stack direction={'row'} spacing={7}>
