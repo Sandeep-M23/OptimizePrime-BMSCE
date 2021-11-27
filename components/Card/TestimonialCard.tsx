@@ -20,7 +20,7 @@ const TestimonialCard: FunctionComponent<Props> = ({ data }: Props) => {
     return (
         <Box>
             <Stack
-                bg={useColorModeValue('white', 'gray.800')}
+                bg={useColorModeValue('white', 'gray.900')}
                 boxShadow={'lg'}
                 p={8}
                 rounded={'xl'}
@@ -36,7 +36,7 @@ const TestimonialCard: FunctionComponent<Props> = ({ data }: Props) => {
                     borderRightWidth: 16,
                     borderTop: 'solid',
                     borderTopWidth: 16,
-                    borderTopColor: useColorModeValue('white', 'gray.800'),
+                    borderTopColor: useColorModeValue('white', 'gray.900'),
                     pos: 'absolute',
                     bottom: '-16px',
                     left: '50%',

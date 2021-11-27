@@ -27,7 +27,7 @@ const BasicCard: FunctionComponent<Props> = ({ data }: Props) => {
                 p={6}
                 textAlign={'center'}
             >
-                <Icon as={icon} boxSize={12} m={{ base: 2 }} color="red.500" />
+                <Icon as={icon} boxSize={12} m={{ base: 2 }} color="#521262" />
                 <Heading fontSize={'2xl'}>{title}</Heading>
                 <Text color={'gray.500'} my={4}>
                     {description}
