@@ -14,7 +14,7 @@ import {
 import { NextPage } from 'next';
 import { AiFillHeart } from 'react-icons/ai';
 import { FaPeopleCarry, FaRunning } from 'react-icons/fa';
-import { IBasicCard, ITestimonial } from '../@types';
+import { IBasicCard, IService, ITestimonial } from '../@types';
 import BasicCard from '../components/Card/BasicCard';
 import ServiceCard from '../components/Card/ServiceCard';
 import TestimonialCard from '../components/Card/TestimonialCard';
@@ -65,6 +65,30 @@ const testimonialCardData: ITestimonial[] = [
         designation: 'CEO',
         imageUrl:
             'https://matar-elementor.42theme.com/wp-content/uploads/2020/05/beautiful-young-woman-standing-outdoors-PDP7Q6B-1.jpg',
+    },
+];
+
+const serviceData: IService[] = [
+    {
+        title: 'Individual Therapy',
+        description:
+            'Individual therapy is one type of psychotherapy in which a trained professional helps a single person work through personal issues they have been facing. It is an effective treatment for a variety of emotional difficulties and mental illnesses.',
+        imageUrl:
+            'https://matar-elementor.42theme.com/wp-content/uploads/2020/05/interested-young-woman-listening-carefully-to-psyc-4LTTAE3-scaled.jpg',
+    },
+    {
+        title: 'Couples Therapy',
+        description:
+            'Couples therapy can address a wide range of relationship issues, including recurring conflicts, feelings of disconnection, an affair or difficulties due to external stressors.',
+        imageUrl:
+            'https://matar-elementor.42theme.com/wp-content/uploads/2020/05/happy-couple-at-successful-therapy-session-with-fa-W9KXY7U-scaled.jpg',
+    },
+    {
+        title: 'Children Therapy',
+        description:
+            'Child counseling is a type of therapy that focuses on young children, teens, and adolescents with one or more mental illnesses. It also provides aid to youths, who have experienced trauma, and/or who are experiencing a dysfunctional or stressful home environment.',
+        imageUrl:
+            'https://matar-elementor.42theme.com/wp-content/uploads/2020/05/sad-boy-with-teddy-bear-JVSTZXX-scaled.jpg',
     },
 ];
 
@@ -192,9 +216,9 @@ const Home: NextPage = () => {
                         columns={{ base: 1, md: 3 }}
                         spacing={{ base: 5, lg: 8 }}
                     >
-                        <ServiceCard />
-                        <ServiceCard />
-                        <ServiceCard />
+                        {serviceData.map((data, index) => (
+                            <ServiceCard data={data} key={index} />
+                        ))}
                     </SimpleGrid>
                 </Stack>
                 {/*Schedule*/}

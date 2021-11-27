@@ -27,3 +27,9 @@ interface ITestimonial {
     designation: string;
     imageUrl: string;
 }
+
+interface IService {
+    title: string;
+    description: string;
+    imageUrl: string;
+}
