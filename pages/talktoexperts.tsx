@@ -182,21 +182,21 @@ const TalkToExperts: NextPage = () => {
                                             as={FaCheckCircle}
                                             color="purple.500"
                                         />
-                                        unlimited build minutes
+                                        Anxiety Therapy
                                     </ListItem>
                                     <ListItem>
                                         <ListIcon
                                             as={FaCheckCircle}
                                             color="purple.500"
                                         />
-                                        Lorem, ipsum dolor.
+                                        Depression Therapy
                                     </ListItem>
                                     <ListItem>
                                         <ListIcon
                                             as={FaCheckCircle}
                                             color="purple.500"
                                         />
-                                        5TB Lorem, ipsum dolor.
+                                        Personal Coaching
                                     </ListItem>
                                 </List>
                                 <Box w="80%" pt={7}>
@@ -262,7 +262,7 @@ const TalkToExperts: NextPage = () => {
                                                 as={FaCheckCircle}
                                                 color="purple.500"
                                             />
-                                            unlimited build minutes
+                                            Anxiety Therapy
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon
@@ -276,21 +276,21 @@ const TalkToExperts: NextPage = () => {
                                                 as={FaCheckCircle}
                                                 color="purple.500"
                                             />
-                                            5TB Lorem, ipsum dolor.
+                                            Family Therapy
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon
                                                 as={FaCheckCircle}
                                                 color="purple.500"
                                             />
-                                            5TB Lorem, ipsum dolor.
+                                            Personal Coaching
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon
                                                 as={FaCheckCircle}
                                                 color="purple.500"
                                             />
-                                            5TB Lorem, ipsum dolor.
+                                            Psychotherapy
                                         </ListItem>
                                     </List>
                                     <Box w="80%" pt={7}>
@@ -304,14 +304,14 @@ const TalkToExperts: NextPage = () => {
                         <PriceCard>
                             <Box py={4} px={12}>
                                 <Text fontWeight="500" fontSize="2xl">
-                                    Counselling
+                                    Children Therapy
                                 </Text>
                                 <HStack justifyContent="center">
                                     <Text fontSize="3xl" fontWeight="600">
                                         $
                                     </Text>
                                     <Text fontSize="5xl" fontWeight="900">
-                                        349
+                                        249
                                     </Text>
                                     <Text fontSize="3xl" color="gray.500">
                                         /month
@@ -329,21 +329,21 @@ const TalkToExperts: NextPage = () => {
                                             as={FaCheckCircle}
                                             color="purple.500"
                                         />
-                                        unlimited build minutes
+                                        Child Therapy
                                     </ListItem>
                                     <ListItem>
                                         <ListIcon
                                             as={FaCheckCircle}
                                             color="purple.500"
                                         />
-                                        Lorem, ipsum dolor.
+                                        Family Therapy
                                     </ListItem>
                                     <ListItem>
                                         <ListIcon
                                             as={FaCheckCircle}
                                             color="purple.500"
                                         />
-                                        5TB Lorem, ipsum dolor.
+                                        Psychotherapy
                                     </ListItem>
                                 </List>
                                 <Box w="80%" pt={7}>
