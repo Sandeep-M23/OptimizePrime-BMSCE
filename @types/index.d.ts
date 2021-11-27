@@ -33,3 +33,10 @@ interface IService {
     description: string;
     imageUrl: string;
 }
+
+interface IFeature {
+    text: string;
+    iconBg: string;
+    icon: IconType;
+    color: string;
+}
