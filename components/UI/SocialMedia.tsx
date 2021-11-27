@@ -1,6 +1,6 @@
 import { Icon, Link, Text } from '@chakra-ui/react';
 import { FunctionComponent } from 'react';
-import { ISocialMedia } from '../@types';
+import { ISocialMedia } from '../../@types';
 
 type Props = {
     data: ISocialMedia;

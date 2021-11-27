@@ -20,7 +20,8 @@ import {
 } from 'react-icons/bs';
 import { MdEmail, MdLocationOn, MdPhone } from 'react-icons/md';
 import { ISocialMedia } from '../../@types';
-import SocialMedia from '../SocialMedia';
+import SocialMedia from '../UI/SocialMedia';
+import Logo from '../Logo/Logo';
 
 const Footer: FunctionComponent = () => {
     const varun: ISocialMedia[] = [
@@ -78,7 +79,7 @@ const Footer: FunctionComponent = () => {
                             ml: 8,
                         }}
                     >
-                        {/*LOGO*/}
+                        <Logo />
                     </Flex>
                 </Box>
                 <SimpleGrid columns={{ base: 2, md: 4 }} spacing={8}>
