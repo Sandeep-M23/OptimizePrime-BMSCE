@@ -52,6 +52,7 @@ const Blogs: NextPage = () => {
                     bg={'#521262'}
                 >
                     <Heading
+                        color="white"
                         p={3}
                         mb={3}
                         fontWeight={600}

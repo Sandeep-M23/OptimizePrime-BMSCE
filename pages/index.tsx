@@ -79,14 +79,14 @@ const serviceData: IService[] = [
     {
         title: 'Couples Therapy',
         description:
-            'Couples therapy can address a wide range of relationship issues, including recurring conflicts, feelings of disconnection, an affair or difficulties due to external stressors.',
+            'Couples therapy can address a wide range of relationship issues, including recurring conflicts, feelings of disconnection, an affair, stress and no harmony, understanding or difficulties due to external stressors.',
         imageUrl:
             'https://matar-elementor.42theme.com/wp-content/uploads/2020/05/happy-couple-at-successful-therapy-session-with-fa-W9KXY7U-scaled.jpg',
     },
     {
         title: 'Children Therapy',
         description:
-            'Child counseling is a type of therapy that focuses on young children, teens, and adolescents with one or more mental illnesses. It also provides aid to youths, who have experienced trauma, and/or who are experiencing a dysfunctional or stressful home environment.',
+            'Child counseling is a type of therapy that focuses on young children and adolescents with one or more mental illnesses. It also provides aid to youths, who have experienced trauma, who are experiencing a dysfunctional or stressful home environment.',
         imageUrl:
             'https://matar-elementor.42theme.com/wp-content/uploads/2020/05/sad-boy-with-teddy-bear-JVSTZXX-scaled.jpg',
     },
@@ -209,8 +209,9 @@ const Home: NextPage = () => {
                         What we can Offer
                     </Heading>
                     <Text color={'gray.500'}>
-                        Maecenas nec mi in est maximus fermentum. Suspendisse
-                        tempus, nibh id convallis porttitor, ipsum.
+                        We Are Trained and Professional Councellsor,who
+                        understand the issuse faced by our clients and discuss
+                        various/topics to resolve problem.
                     </Text>
                     <SimpleGrid
                         columns={{ base: 1, md: 3 }}
@@ -244,7 +245,7 @@ const Home: NextPage = () => {
                                     position: 'absolute',
                                     bottom: 1,
                                     left: 0,
-                                    bg: 'red.400',
+                                    bg: 'purple.700',
                                     zIndex: -1,
                                 }}
                             >
@@ -264,9 +265,10 @@ const Home: NextPage = () => {
                             size={'lg'}
                             fontWeight={'normal'}
                             px={6}
-                            colorScheme={'red'}
-                            bg={'red.400'}
-                            _hover={{ bg: 'red.500' }}
+                            colorScheme={'purple'}
+                            color={'white'}
+                            bg={'purple.700'}
+                            _hover={{ bg: 'purple.800' }}
                         >
                             Schedule a session
                         </Button>
@@ -302,7 +304,7 @@ const Home: NextPage = () => {
                 {/*Testimonial */}
                 <Stack spacing={6} align={'center'} py={{ base: 20 }}>
                     <Heading>What Our Clients Say</Heading>
-                    <Text>
+                    <Text color={'gray.500'}>
                         We have been working with clients around the world and
                         Here are the few things they say about us.
                     </Text>

@@ -23,7 +23,7 @@ const ServiceCard: FunctionComponent<Props> = ({ data }: Props) => {
                 p={6}
                 maxW={'330px'}
                 w={'full'}
-                bg={useColorModeValue('white', 'gray.800')}
+                bg={useColorModeValue('white', 'gray.900')}
                 boxShadow={'2xl'}
                 rounded={'lg'}
             >

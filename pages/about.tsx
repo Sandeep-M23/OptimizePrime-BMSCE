@@ -29,11 +29,11 @@ const About: NextPage = () => {
                     bg={'#521262'}
                 >
                     <Heading
+                        color="white"
                         p={3}
                         fontWeight={600}
                         fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
                         lineHeight={'110%'}
-                        color="white"
                     >
                         About Us
                     </Heading>
@@ -45,6 +45,41 @@ const About: NextPage = () => {
                         enabling them to make better healthcare decisions
                     </Text>
                 </Stack>
+                <SimpleGrid
+                    columns={{ base: 1, md: 2 }}
+                    spacing={10}
+                    py={{ base: 20, md: 28 }}
+                >
+                    <Flex>
+                        <Image
+                            rounded={'md'}
+                            alt={'feature image'}
+                            src={
+                                'https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+                            }
+                            objectFit={'cover'}
+                        />
+                    </Flex>
+                    <Stack spacing={4}>
+                        <Heading
+                            textTransform={'uppercase'}
+                            fontWeight={600}
+                            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+                            lineHeight={'110%'}
+                            color="white"
+                        >
+                            About Us
+                        </Heading>
+                        <Text p={3} color="white">
+                            Our mission to make quality healthcare affordable
+                            and accessible for over a billion+ Indians. We
+                            believe in empowering our users with the most
+                            accurate, comprehensive, and curated information and
+                            care, enabling them to make better healthcare
+                            decisions
+                        </Text>
+                    </Stack>
+                </SimpleGrid>
                 <SimpleGrid
                     columns={{ base: 1, md: 2 }}
                     spacing={10}

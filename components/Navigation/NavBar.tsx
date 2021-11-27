@@ -14,7 +14,7 @@ import React, { FunctionComponent } from 'react';
 import Logo from '../Logo/Logo';
 import NavLink from './NavLink';
 
-const Links = ['TalkToExperts', 'Blogs', 'About', 'Contact'];
+const Links = ['About', 'Blogs', 'TalkToExperts', 'Contact'];
 
 const NavBar: FunctionComponent = () => {
     const { colorMode, toggleColorMode } = useColorMode();
