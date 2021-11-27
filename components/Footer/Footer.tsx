@@ -1,19 +1,53 @@
 import {
     Box,
     Container,
+    Flex,
+    Icon,
     Link,
     SimpleGrid,
     Stack,
     Text,
-    Flex,
-    Icon,
     useColorModeValue,
 } from '@chakra-ui/react';
-import { MdEmail, MdLocationOn, MdPhone } from 'react-icons/md';
-import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from 'react-icons/bs';
 import { FunctionComponent } from 'react';
+import {
+    BsFacebook,
+    BsGithub,
+    BsInstagram,
+    BsLinkedin,
+    BsTwitter,
+    BsYoutube,
+} from 'react-icons/bs';
+import { MdEmail, MdLocationOn, MdPhone } from 'react-icons/md';
+import { ISocialMedia } from '../../@types';
+import SocialMedia from '../SocialMedia';
 
 const Footer: FunctionComponent = () => {
+    const varun: ISocialMedia[] = [
+        {
+            icon: BsGithub,
+            url: 'https://github.com/VarunSAthreya',
+            text: 'GitHub',
+        },
+        {
+            icon: BsLinkedin,
+            url: 'https://www.linkedin.com/in/varunsathreya/',
+            text: 'LinkedIn',
+        },
+    ];
+    const sandeep: ISocialMedia[] = [
+        {
+            icon: BsGithub,
+            url: 'https://github.com/Sandeep-M23',
+            text: 'GitHub',
+        },
+        {
+            icon: BsLinkedin,
+            url: 'https://www.linkedin.com/in/sandeep-m-4a599a1a4/',
+            text: 'LinkedIn',
+        },
+    ];
+
     return (
         <Box
             bg={useColorModeValue('gray.50', 'gray.900')}
@@ -47,7 +81,7 @@ const Footer: FunctionComponent = () => {
                         {/*LOGO*/}
                     </Flex>
                 </Box>
-                <SimpleGrid columns={{ base: 2, md: 3 }} spacing={8}>
+                <SimpleGrid columns={{ base: 2, md: 4 }} spacing={8}>
                     <Stack align={'flex-start'}>
                         <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
                             Services
@@ -204,6 +238,23 @@ const Footer: FunctionComponent = () => {
                                 Youtube
                             </Link>
                         </Text>
+                    </Stack>
+                    <Stack align={'flex-start'}>
+                        <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
+                            Designed And Developed By:
+                        </Text>
+                        <Text fontWeight={'500'} fontSize={'md'} mb={2}>
+                            Varun S Athreya
+                        </Text>
+                        {varun.map((data, index) => (
+                            <SocialMedia data={data} key={index} />
+                        ))}
+                        <Text fontWeight={'500'} fontSize={'md'} mb={2}>
+                            Sandeep M
+                        </Text>
+                        {sandeep.map((data, index) => (
+                            <SocialMedia data={data} key={index} />
+                        ))}
                     </Stack>
                 </SimpleGrid>
             </Container>
