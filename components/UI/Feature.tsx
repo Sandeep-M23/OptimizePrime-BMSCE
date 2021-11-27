@@ -1,17 +1,14 @@
-import { Flex, Stack, Text } from '@chakra-ui/react';
+import { Flex, Icon, Stack, Text } from '@chakra-ui/react';
 import { NextPage } from 'next';
-import { ReactElement } from 'react';
+import { IFeature } from '../../@types';
 
-interface FeatureProps {
-    text: string;
-    iconBg: string;
-    icon?: ReactElement;
-}
-const Feature: NextPage<FeatureProps> = ({
-    text,
-    icon,
-    iconBg,
-}: FeatureProps) => {
+type Props = {
+    data: IFeature;
+};
+
+const Feature: NextPage<Props> = ({ data }: Props) => {
+    const { icon, text, iconBg, color } = data;
+
     return (
         <Stack direction={'row'} align={'center'}>
             <Flex
@@ -22,7 +19,7 @@ const Feature: NextPage<FeatureProps> = ({
                 rounded={'full'}
                 bg={iconBg}
             >
-                {icon}
+                <Icon as={icon} boxSize={8} m={{ base: 2 }} color={color} />
             </Flex>
             <Text fontWeight={600}>{text}</Text>
         </Stack>
