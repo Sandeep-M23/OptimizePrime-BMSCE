@@ -11,10 +11,10 @@ import {
     useDisclosure,
 } from '@chakra-ui/react';
 import React, { FunctionComponent } from 'react';
-import NavLink from './NavLink';
 import Logo from '../Logo/Logo';
+import NavLink from './NavLink';
 
-const Links = ['TalkToExperts', 'Blogs', 'About'];
+const Links = ['TalkToExperts', 'Blogs', 'About', 'Contact'];
 
 const NavBar: FunctionComponent = () => {
     const { colorMode, toggleColorMode } = useColorMode();
