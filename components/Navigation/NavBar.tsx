@@ -1,10 +1,12 @@
 import { CloseIcon, HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import {
+    AspectRatio,
     Box,
     Button,
     Flex,
     HStack,
     IconButton,
+    Image,
     Stack,
     useColorMode,
     useColorModeValue,
@@ -13,7 +15,7 @@ import {
 import React, { FunctionComponent } from 'react';
 import NavLink from './NavLink';
 
-const Links = ['Home', 'TalkToExperts', 'AboutUs'];
+const Links = ['TalkToExperts', 'Blogs', 'About'];
 
 const NavBar: FunctionComponent = () => {
     const { colorMode, toggleColorMode } = useColorMode();
@@ -39,7 +41,17 @@ const NavBar: FunctionComponent = () => {
                             onClick={isOpen ? onClose : onOpen}
                         />
                         <HStack spacing={8} alignItems={'center'}>
-                            <Box>Logo</Box>
+                            <Box>
+                                <AspectRatio maxW="400px" ratio={4 / 3}>
+                                    <Image
+                                        src="/assets/images/logo.png"
+                                        alt="logo"
+                                        objectFit="cover"
+                                    />
+                                </AspectRatio>
+                            </Box>
+                        </HStack>
+                        <HStack spacing={8} alignItems={'center'}>
                             <HStack
                                 as={'nav'}
                                 spacing={4}

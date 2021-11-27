@@ -5,11 +5,11 @@ import {
     Flex,
     Heading,
     Image,
+    SimpleGrid,
     Stack,
     Text,
-    SimpleGrid,
-    VStack,
     useBreakpointValue,
+    VStack,
 } from '@chakra-ui/react';
 import { NextPage } from 'next';
 import BasicCard from '../components/Card/BasicCard';
