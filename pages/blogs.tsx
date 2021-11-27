@@ -51,6 +51,7 @@ const Blogs: NextPage = () => {
                     bg={'#521262'}
                 >
                     <Heading
+                        color="white"
                         p={3}
                         mb={3}
                         fontWeight={600}
@@ -59,7 +60,7 @@ const Blogs: NextPage = () => {
                     >
                         Blogs
                     </Heading>
-                    <Text p={3}>
+                    <Text p={3} color="white">
                         Across the world, people use blogs as a platform to
                         share experiences, increase awareness and understanding,
                         and provide comfort and support. And that’s a very good
