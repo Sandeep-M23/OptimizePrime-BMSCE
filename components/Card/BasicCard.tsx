@@ -9,6 +9,27 @@ import {
 import { BsFacebook } from 'react-icons/bs';
 import { FunctionComponent } from 'react';
 
+const Data = [
+    {
+        title: 'Affects Physical Health',
+        description:
+            'The mind and the body are connected. Many mental ailments cause stress, which lowers the immune system. This means more frequent sickness and inability to cope.Stress and anxiety can take a toll on our physical health.',
+        icon: 'FaRunning',
+    },
+    {
+        title: 'Affects Everything',
+        descripition:
+            'Our mental health affects how we cope with life. Lack of treatment leads to hopelessness and sadness, worthlessness, feeling guilty, anxiety and worry, fear, and loss of control.Our relationships may suffer.',
+        icon: 'AiFillHeart',
+    },
+    {
+        title: 'End Stigma and Shame',
+        description:
+            'When it comes down to it, those who are mentally ill must need treatment. But without awareness and breaking the stigma surrounding their condition, they won’t feel comfortable reaching out to somebody for help.',
+        icon: 'FaPeopleCarry',
+    },
+];
+
 const BasicCard: FunctionComponent = () => {
     return (
         <Center py={6}>

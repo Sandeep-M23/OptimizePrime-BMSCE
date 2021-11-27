@@ -9,30 +9,32 @@ import {
 } from '@chakra-ui/react';
 import { FunctionComponent } from 'react';
 
-const TestimonialAvatar = ({
-    src,
-    name,
-    title,
-}: {
-    src: string;
-    name: string;
-    title: string;
-}) => {
-    return (
-        <Flex align={'center'} mt={8} direction={'column'}>
-            <Avatar src={src} alt={name} mb={2} />
-            <Stack spacing={-1} align={'center'}>
-                <Text fontWeight={600}>{name}</Text>
-                <Text
-                    fontSize={'sm'}
-                    color={useColorModeValue('gray.600', 'gray.400')}
-                >
-                    {title}
-                </Text>
-            </Stack>
-        </Flex>
-    );
-};
+const data = [
+    {
+        heading: '',
+        review: '',
+        name: 'Guy Hawkins',
+        designation: 'Designer',
+        imageUrl:
+            'http://webdesign-finder.com/psycheco-psychology/wp-content/uploads/2021/06/img50.jpg',
+    },
+    {
+        heading: '',
+        review: '',
+        name: 'Alec Buttons',
+        designation: 'Software Engineer',
+        imageUrl:
+            'https://matar-elementor.42theme.com/wp-content/uploads/2020/05/close-up-cheerful-older-man-standing-isolated-on-w-Z7MW6Q8.jpg',
+    },
+    {
+        heading: '',
+        review: '',
+        name: 'Kira Rhoades',
+        designation: 'CEO',
+        imageUrl:
+            'https://matar-elementor.42theme.com/wp-content/uploads/2020/05/beautiful-young-woman-standing-outdoors-PDP7Q6B-1.jpg',
+    },
+];
 
 const TestimonialCard: FunctionComponent = () => {
     return (
@@ -73,13 +75,24 @@ const TestimonialCard: FunctionComponent = () => {
                     Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
                 </Text>
             </Stack>
-            <TestimonialAvatar
-                src={
-                    'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
-                }
-                name={'Jane Cooper'}
-                title={'CEO at ABC Corporation'}
-            />
+            <Flex align={'center'} mt={8} direction={'column'}>
+                <Avatar
+                    src={
+                        'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+                    }
+                    alt={'Jane Cooper'}
+                    mb={2}
+                />
+                <Stack spacing={-1} align={'center'}>
+                    <Text fontWeight={600}>Jane Cooper</Text>
+                    <Text
+                        fontSize={'sm'}
+                        color={useColorModeValue('gray.600', 'gray.400')}
+                    >
+                        CEO at ABC Corporation
+                    </Text>
+                </Stack>
+            </Flex>
         </Box>
     );
 };
