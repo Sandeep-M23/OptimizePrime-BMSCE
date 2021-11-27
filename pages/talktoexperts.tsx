@@ -5,7 +5,6 @@ import {
     Flex,
     Heading,
     HStack,
-    Icon,
     Image,
     List,
     ListIcon,
@@ -19,12 +18,53 @@ import {
 } from '@chakra-ui/react';
 import { NextPage } from 'next';
 import { FaCheckCircle } from 'react-icons/fa';
-import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
-import { IoSearchSharp } from 'react-icons/io5';
+import { MdChildCare, MdEmojiPeople, MdFamilyRestroom } from 'react-icons/md';
+import { IFeature } from '../@types';
 import PriceCard from '../components/Card/PriceCard';
 import Feature from '../components/UI/Feature';
 import Layout from '../components/UI/Layout';
+
 const TalkToExperts: NextPage = () => {
+    const featureData1: IFeature[] = [
+        {
+            icon: MdEmojiPeople,
+            text: 'Individual Therapy',
+            iconBg: 'white',
+            color: useColorModeValue('purple.100', 'purple.900'),
+        },
+        {
+            icon: MdFamilyRestroom,
+            text: 'Family Therapy',
+            iconBg: 'white',
+            color: useColorModeValue('purple.100', 'purple.900'),
+        },
+        {
+            icon: MdChildCare,
+            text: 'Children Therapy',
+            iconBg: 'white',
+            color: useColorModeValue('purple.100', 'purple.900'),
+        },
+    ];
+    const featureData2: IFeature[] = [
+        {
+            icon: MdEmojiPeople,
+            text: 'Individual therapy is one type of psychotherapy in which a trained professional helps a single person work through personal issues they have been facing. It is an effective treatment for a variety of emotional difficulties and mental illnesses.',
+            iconBg: useColorModeValue('purple.100', 'purple.900'),
+            color: 'white',
+        },
+        {
+            icon: MdFamilyRestroom,
+            text: 'Couples therapy can address a wide range of relationship issues, including recurring conflicts, feelings of disconnection, an affair or difficulties due to external stressors.',
+            iconBg: useColorModeValue('purple.100', 'purple.900'),
+            color: 'white',
+        },
+        {
+            icon: MdChildCare,
+            text: 'Child counseling is a type of therapy that focuses on young children, teens, and adolescents with one or more mental illnesses. It also provides aid to youths, who have experienced trauma, and/or who are experiencing a dysfunctional or stressful home environment.',
+            iconBg: useColorModeValue('purple.100', 'purple.900'),
+            color: 'white',
+        },
+    ];
     return (
         <Layout title="MHM | Talk to Experts">
             <Container maxW={'5xl'} py={12}>
@@ -32,10 +72,10 @@ const TalkToExperts: NextPage = () => {
                     <Stack spacing={4}>
                         <Text
                             textTransform={'uppercase'}
-                            color={'blue.400'}
                             fontWeight={600}
                             fontSize={'sm'}
-                            bg={useColorModeValue('blue.50', 'blue.900')}
+                            bg={'#521262'}
+                            color={'white'}
                             p={2}
                             alignSelf={'flex-start'}
                             rounded={'md'}
@@ -63,6 +103,7 @@ const TalkToExperts: NextPage = () => {
                             longer a safe, loving, and enjoyable space.
                         </Text>
                         <Stack
+                            p={2}
                             spacing={4}
                             divider={
                                 <StackDivider
@@ -73,51 +114,9 @@ const TalkToExperts: NextPage = () => {
                                 />
                             }
                         >
-                            <Feature
-                                icon={
-                                    <Icon
-                                        as={FcAssistant}
-                                        color={'yellow.500'}
-                                        w={5}
-                                        h={5}
-                                    />
-                                }
-                                iconBg={useColorModeValue(
-                                    'yellow.100',
-                                    'yellow.900'
-                                )}
-                                text={'Individual Therapy'}
-                            />
-                            <Feature
-                                icon={
-                                    <Icon
-                                        as={FcInTransit}
-                                        color={'green.500'}
-                                        w={5}
-                                        h={5}
-                                    />
-                                }
-                                iconBg={useColorModeValue(
-                                    'green.100',
-                                    'green.900'
-                                )}
-                                text={'Family Therapy'}
-                            />
-                            <Feature
-                                icon={
-                                    <Icon
-                                        as={FcDonate}
-                                        color={'purple.500'}
-                                        w={5}
-                                        h={5}
-                                    />
-                                }
-                                iconBg={useColorModeValue(
-                                    'purple.100',
-                                    'purple.900'
-                                )}
-                                text={'Coaching'}
-                            />
+                            {featureData1.map((data, index) => (
+                                <Feature data={data} key={index} />
+                            ))}
                         </Stack>
                     </Stack>
                     <Flex>
@@ -133,57 +132,9 @@ const TalkToExperts: NextPage = () => {
                 </SimpleGrid>
                 <Box p={4} mt={10}>
                     <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
-                        <Feature
-                            icon={
-                                <Icon
-                                    as={IoSearchSharp}
-                                    color={'purple.500'}
-                                    w={5}
-                                    h={5}
-                                />
-                            }
-                            iconBg={useColorModeValue(
-                                'purple.100',
-                                'purple.900'
-                            )}
-                            text={
-                                'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-                            }
-                        />
-                        <Feature
-                            icon={
-                                <Icon
-                                    as={IoSearchSharp}
-                                    color={'purple.500'}
-                                    w={5}
-                                    h={5}
-                                />
-                            }
-                            iconBg={useColorModeValue(
-                                'purple.100',
-                                'purple.900'
-                            )}
-                            text={
-                                'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-                            }
-                        />
-                        <Feature
-                            icon={
-                                <Icon
-                                    as={IoSearchSharp}
-                                    color={'purple.500'}
-                                    w={5}
-                                    h={5}
-                                />
-                            }
-                            iconBg={useColorModeValue(
-                                'purple.100',
-                                'purple.900'
-                            )}
-                            text={
-                                'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-                            }
-                        />
+                        {featureData2.map((data, index) => (
+                            <Feature data={data} key={index} />
+                        ))}
                     </SimpleGrid>
                 </Box>
                 <Box py={12}>
@@ -229,21 +180,21 @@ const TalkToExperts: NextPage = () => {
                                     <ListItem>
                                         <ListIcon
                                             as={FaCheckCircle}
-                                            color="green.500"
+                                            color="purple.500"
                                         />
                                         unlimited build minutes
                                     </ListItem>
                                     <ListItem>
                                         <ListIcon
                                             as={FaCheckCircle}
-                                            color="green.500"
+                                            color="purple.500"
                                         />
                                         Lorem, ipsum dolor.
                                     </ListItem>
                                     <ListItem>
                                         <ListIcon
                                             as={FaCheckCircle}
-                                            color="green.500"
+                                            color="purple.500"
                                         />
                                         5TB Lorem, ipsum dolor.
                                     </ListItem>
@@ -251,7 +202,7 @@ const TalkToExperts: NextPage = () => {
                                 <Box w="80%" pt={7}>
                                     <Button
                                         w="full"
-                                        colorScheme="red"
+                                        colorScheme="purple"
                                         variant="outline"
                                     >
                                         Start trial
@@ -270,16 +221,10 @@ const TalkToExperts: NextPage = () => {
                                 >
                                     <Text
                                         textTransform="uppercase"
-                                        bg={useColorModeValue(
-                                            'red.300',
-                                            'red.700'
-                                        )}
+                                        bg={'#521262'}
                                         px={3}
                                         py={1}
-                                        color={useColorModeValue(
-                                            'gray.900',
-                                            'gray.300'
-                                        )}
+                                        color={'white'}
                                         fontSize="sm"
                                         fontWeight="600"
                                         rounded="xl"
@@ -315,41 +260,41 @@ const TalkToExperts: NextPage = () => {
                                         <ListItem>
                                             <ListIcon
                                                 as={FaCheckCircle}
-                                                color="green.500"
+                                                color="purple.500"
                                             />
                                             unlimited build minutes
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon
                                                 as={FaCheckCircle}
-                                                color="green.500"
+                                                color="purple.500"
                                             />
                                             Lorem, ipsum dolor.
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon
                                                 as={FaCheckCircle}
-                                                color="green.500"
+                                                color="purple.500"
                                             />
                                             5TB Lorem, ipsum dolor.
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon
                                                 as={FaCheckCircle}
-                                                color="green.500"
+                                                color="purple.500"
                                             />
                                             5TB Lorem, ipsum dolor.
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon
                                                 as={FaCheckCircle}
-                                                color="green.500"
+                                                color="purple.500"
                                             />
                                             5TB Lorem, ipsum dolor.
                                         </ListItem>
                                     </List>
                                     <Box w="80%" pt={7}>
-                                        <Button w="full" colorScheme="red">
+                                        <Button w="full" colorScheme="purple">
                                             Start trial
                                         </Button>
                                     </Box>
@@ -382,21 +327,21 @@ const TalkToExperts: NextPage = () => {
                                     <ListItem>
                                         <ListIcon
                                             as={FaCheckCircle}
-                                            color="green.500"
+                                            color="purple.500"
                                         />
                                         unlimited build minutes
                                     </ListItem>
                                     <ListItem>
                                         <ListIcon
                                             as={FaCheckCircle}
-                                            color="green.500"
+                                            color="purple.500"
                                         />
                                         Lorem, ipsum dolor.
                                     </ListItem>
                                     <ListItem>
                                         <ListIcon
                                             as={FaCheckCircle}
-                                            color="green.500"
+                                            color="purple.500"
                                         />
                                         5TB Lorem, ipsum dolor.
                                     </ListItem>
@@ -404,7 +349,7 @@ const TalkToExperts: NextPage = () => {
                                 <Box w="80%" pt={7}>
                                     <Button
                                         w="full"
-                                        colorScheme="red"
+                                        colorScheme="purple"
                                         variant="outline"
                                     >
                                         Start trial

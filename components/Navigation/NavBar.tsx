@@ -11,9 +11,10 @@ import {
     useDisclosure,
 } from '@chakra-ui/react';
 import React, { FunctionComponent } from 'react';
+import Logo from '../Logo/Logo';
 import NavLink from './NavLink';
 
-const Links = ['Home', 'TalkToExperts', 'AboutUs'];
+const Links = ['TalkToExperts', 'Blogs', 'About', 'Contact'];
 
 const NavBar: FunctionComponent = () => {
     const { colorMode, toggleColorMode } = useColorMode();
@@ -39,18 +40,20 @@ const NavBar: FunctionComponent = () => {
                             onClick={isOpen ? onClose : onOpen}
                         />
                         <HStack spacing={8} alignItems={'center'}>
-                            <Box>Logo</Box>
-                            <HStack
-                                as={'nav'}
-                                spacing={4}
-                                display={{ base: 'none', md: 'flex' }}
-                            >
-                                {Links.map((link) => (
-                                    <NavLink key={link}>{link}</NavLink>
-                                ))}
-                            </HStack>
+                            <Logo />
                         </HStack>
                     </Flex>
+                    <HStack spacing={8} alignItems={'center'}>
+                        <HStack
+                            as={'nav'}
+                            spacing={4}
+                            display={{ base: 'none', md: 'flex' }}
+                        >
+                            {Links.map((link) => (
+                                <NavLink key={link}>{link}</NavLink>
+                            ))}
+                        </HStack>
+                    </HStack>
 
                     <Flex alignItems={'center'}>
                         <Stack direction={'row'} spacing={7}>
