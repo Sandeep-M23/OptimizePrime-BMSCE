@@ -6,7 +6,7 @@ This Project won <code>2<sup>nd</sup> place</code> in the Hackathon.
 
 ## Theme
 
-The theme of the website is to help people with mental health issues to find a mental health professional,  and to hepl them to be aware of the different types of mental health issues and its symptoms.
+The theme of the website is to help people with mental health issues to find a mental health professional,  and to help them to be aware of the different types of mental health issues and its symptoms.
 
 ## Technologies Used
 
