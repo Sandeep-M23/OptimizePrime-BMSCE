@@ -44,23 +44,23 @@ const basicCardData: IBasicCard[] = [
 const testimonialCardData: ITestimonial[] = [
     {
         heading: 'Efficient Collaborating',
-        review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Auctor neque sed imperdiet nibh lectus feugiat nunc sem.',
+        review: 'The people providing the service and technology used is very good and have good collaboration.',
         name: 'Guy Hawkins',
         designation: 'Designer',
         imageUrl:
             'http://webdesign-finder.com/psycheco-psychology/wp-content/uploads/2021/06/img50.jpg',
     },
     {
-        heading: 'Efficient Collaborating',
-        review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.',
+        heading: 'Good Service',
+        review: 'The service provided by the doctors is very good and they have very good knowledge.',
         name: 'Alec Buttons',
         designation: 'Software Engineer',
         imageUrl:
             'https://matar-elementor.42theme.com/wp-content/uploads/2020/05/close-up-cheerful-older-man-standing-isolated-on-w-Z7MW6Q8.jpg',
     },
     {
-        heading: 'Efficient Collaborating',
-        review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.',
+        heading: 'Friendly Nature',
+        review: 'The Doctors are very friendly and understand the problem very quickly.',
         name: 'Kira Rhoades',
         designation: 'CEO',
         imageUrl:
@@ -95,13 +95,13 @@ const serviceData: IService[] = [
 const Home: NextPage = () => {
     return (
         <Layout title="MHM">
-            <Container maxW={'6xl'}>
+            <Container maxW={'7xl'}>
                 {/*Poster*/}
                 <Flex
                     w={'full'}
-                    h={'75vh'}
+                    h={'80vh'}
                     backgroundImage={
-                        'url(https://static.scientificamerican.com/sciam/cache/file/54808BE2-DCC8-4438-860BFF8211C17CE2_source.jpg)'
+                        'url(https://www.minnpost.com/wp-content/uploads/2020/01/WomanSilhouette640.jpg?strip=all)'
                     }
                     backgroundSize={'cover'}
                     backgroundPosition={'center center'}
@@ -112,11 +112,15 @@ const Home: NextPage = () => {
                         px={useBreakpointValue({ base: 4, md: 8 })}
                         bgGradient={'linear(to-r, blackAlpha.600, transparent)'}
                     >
-                        <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
+                        <Stack maxW={'2xl'} align={'center'} spacing={3}>
+                            <Text color={'purple.400'}>
+                                MENTAL HEALTH MATTERS
+                            </Text>
                             <Text
-                                color={'white'}
-                                fontWeight={700}
+                                color={'gray.200'}
+                                fontWeight={400}
                                 lineHeight={1.2}
+                                textAlign={'center'}
                                 fontSize={useBreakpointValue({
                                     base: '2xl',
                                     md: '4xl',
@@ -124,7 +128,19 @@ const Home: NextPage = () => {
                             >
                                 Covid 19 has intensified and exaggerated fault
                                 lines in contemporary socities revealing back to
-                                us our ways of dealing with Mental Health
+                                us our ways of dealing with
+                            </Text>
+                            <Text
+                                color={'purple.400'}
+                                fontWeight={400}
+                                lineHeight={1.2}
+                                textAlign={'center'}
+                                fontSize={useBreakpointValue({
+                                    base: '2xl',
+                                    md: '4xl',
+                                })}
+                            >
+                                Mental Health
                             </Text>
                         </Stack>
                     </VStack>
