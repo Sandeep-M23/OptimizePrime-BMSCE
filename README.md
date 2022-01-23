@@ -81,6 +81,6 @@ npm run dev
         npm run lint
     ```
 
-## Development
+## Deployment
 
-To understand the development process, go [here](https://nextjs.org/docs/deployment)
+To understand the deployment process, go [here](https://nextjs.org/docs/deployment)
