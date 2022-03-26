@@ -55,7 +55,7 @@ const TestimonialCard: FunctionComponent<Props> = ({ data }: Props) => {
                 </Text>
             </Stack>
             <Flex align={'center'} mt={8} direction={'column'}>
-                <Avatar src={imageUrl} alt={name} mb={2} />
+                <Avatar src={imageUrl} mb={2} />
                 <Stack spacing={-1} align={'center'}>
                     <Text fontWeight={600}>{name}</Text>
                     <Text

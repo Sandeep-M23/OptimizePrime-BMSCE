@@ -92,7 +92,7 @@ const About: NextPage = () => {
                         </Text>
                     </Stack>
                 </SimpleGrid>
-                <Box p={4} spacing={8}>
+                <Box p={4}>
                     <Heading textAlign={'center'} mb={4}>
                         Credentials
                     </Heading>
