@@ -113,6 +113,7 @@ const Footer: FunctionComponent = () => {
                                 _hover={{
                                     textDecoration: 'none',
                                 }}
+                                _focus={{ outline: 'none' }}
                             >
                                 +91 80 8861 1802
                             </Link>
@@ -133,6 +134,7 @@ const Footer: FunctionComponent = () => {
                                 _hover={{
                                     textDecoration: 'none',
                                 }}
+                                _focus={{ outline: 'none' }}
                             >
                                 HmH@gmail.com
                             </Link>
@@ -171,6 +173,7 @@ const Footer: FunctionComponent = () => {
                                 _hover={{
                                     textDecoration: 'none',
                                 }}
+                                _focus={{ outline: 'none' }}
                             >
                                 FaceBook
                             </Link>
@@ -195,6 +198,7 @@ const Footer: FunctionComponent = () => {
                                 _hover={{
                                     textDecoration: 'none',
                                 }}
+                                _focus={{ outline: 'none' }}
                             >
                                 Instagram
                             </Link>
@@ -215,6 +219,7 @@ const Footer: FunctionComponent = () => {
                                 _hover={{
                                     textDecoration: 'none',
                                 }}
+                                _focus={{ outline: 'none' }}
                             >
                                 Twitter
                             </Link>
@@ -235,6 +240,7 @@ const Footer: FunctionComponent = () => {
                                 _hover={{
                                     textDecoration: 'none',
                                 }}
+                                _focus={{ outline: 'none' }}
                             >
                                 Youtube
                             </Link>

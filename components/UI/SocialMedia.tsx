@@ -26,6 +26,7 @@ const SocialMedia: FunctionComponent<Props> = ({ data }: Props) => {
                 _hover={{
                     textDecoration: 'none',
                 }}
+                _focus={{ outline: 'none' }}
             >
                 {text}
             </Link>

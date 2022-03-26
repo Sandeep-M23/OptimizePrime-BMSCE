@@ -4,7 +4,7 @@ import { FunctionComponent } from 'react';
 const Logo: FunctionComponent = () => {
     return (
         <Box>
-            <Link href="/">
+            <Link href="/" _focus={{ outline: 'none' }}>
                 <Image
                     src="/assets/images/logo.png"
                     alt="Logo"

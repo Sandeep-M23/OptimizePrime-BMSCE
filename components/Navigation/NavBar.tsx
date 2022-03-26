@@ -57,7 +57,10 @@ const NavBar: FunctionComponent = () => {
 
                     <Flex alignItems={'center'}>
                         <Stack direction={'row'} spacing={7}>
-                            <Button onClick={toggleColorMode}>
+                            <Button
+                                onClick={toggleColorMode}
+                                _focus={{ outline: 'none' }}
+                            >
                                 {colorMode === 'light' ? (
                                     <MoonIcon />
                                 ) : (
